@@ -3,6 +3,7 @@ package com.exemple.ussd
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.os.Bundle
+import android.util.Log
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 
@@ -26,6 +27,7 @@ class UssdAccessibilityService : AccessibilityService() {
 
         // Recherche du texte spécifique au pop-up TELMA Yellow One
         if (findNodeByText(sourceNode, "YELLOW ONE!") || findNodeByText(sourceNode, "En profiter?")) {
+            Log.d("USSD_SERVICE", "Dialogue USSD détecté !")
             handleUssdDialog(sourceNode)
         }
     }

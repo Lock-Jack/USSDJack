@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_description">Service d'automatisation pour les codes USSD Telma.</string>
+</resources>
