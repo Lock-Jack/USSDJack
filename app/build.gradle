@@ -1,0 +1,9 @@
+// ── Remplace YOUR_PACKAGE_NAME par ton package réel ──
+// Dans build.gradle (module :app)
+
+dependencies {
+    // WorkManager Kotlin extensions
+    implementation "androidx.work:work-runtime-ktx:2.9.0"
+
+    // (le reste de tes dépendances existantes)
+}

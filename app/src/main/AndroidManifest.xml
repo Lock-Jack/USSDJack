@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ⚠️ Remplace com.example.ussdauto par ton package réel partout dans ce fichier -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ussdauto">
+
+    <!-- Permission d'appel téléphonique (obligatoire pour lancer un USSD) -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Permission pour maintenir le Worker actif en arrière-plan -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Nécessaire pour WorkManager sur certains OEM -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- Activité principale : demande la permission CALL_PHONE au lancement -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            Service d'accessibilité.
+            L'utilisateur DOIT l'activer manuellement dans :
+            Paramètres → Accessibilité → UssdAuto
+        -->
+        <service
+            android:name=".UssdAutomationService"
+            android:exported="true"
+            android:label="USSD Auto Service"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <!-- Métadonnées pointant vers le fichier de configuration XML -->
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/ussd_service_config" />
+        </service>
+
+    </application>
+</manifest>
