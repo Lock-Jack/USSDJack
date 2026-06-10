@@ -1,9 +1,18 @@
-// ── Remplace YOUR_PACKAGE_NAME par ton package réel ──
-// Dans build.gradle (module :app)
+buildscript {
+    ext.kotlin_version = "1.9.0"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.2.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
 
-dependencies {
-    // WorkManager Kotlin extensions
-    implementation "androidx.work:work-runtime-ktx:2.9.0"
-
-    // (le reste de tes dépendances existantes)
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
 }
