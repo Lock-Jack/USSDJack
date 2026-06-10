@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.example.ussdauto.app-merged_res-28:/xml_ussd_service_config.xml.flat",
+        "source": "com.example.ussdauto.app-main-30:/xml/ussd_service_config.xml"
+    }
+]
