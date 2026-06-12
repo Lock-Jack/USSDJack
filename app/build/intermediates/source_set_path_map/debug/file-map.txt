@@ -22,10 +22,10 @@ com.example.ussdauto.app-sqlite-framework-2.3.0-20 /home/jacktsiresy/.gradle/cac
 com.example.ussdauto.app-lifecycle-viewmodel-2.5.1-21 /home/jacktsiresy/.gradle/caches/transforms-3/e8e6886d9d70cb613472aa22251f3d7e/transformed/lifecycle-viewmodel-2.5.1/res
 com.example.ussdauto.app-jetified-core-ktx-1.9.0-22 /home/jacktsiresy/.gradle/caches/transforms-3/faa8dd9795a766026f8542176dcfb402/transformed/jetified-core-ktx-1.9.0/res
 com.example.ussdauto.app-jetified-emoji2-1.2.0-23 /home/jacktsiresy/.gradle/caches/transforms-3/fafd0ffd25f5d9295dcc8079b0181d35/transformed/jetified-emoji2-1.2.0/res
-com.example.ussdauto.app-pngs-24 /home/jacktsiresy/UssdAuto/app/build/generated/res/pngs/debug
-com.example.ussdauto.app-resValues-25 /home/jacktsiresy/UssdAuto/app/build/generated/res/resValues/debug
-com.example.ussdauto.app-packageDebugResources-26 /home/jacktsiresy/UssdAuto/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.ussdauto.app-packageDebugResources-27 /home/jacktsiresy/UssdAuto/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.ussdauto.app-merged_res-28 /home/jacktsiresy/UssdAuto/app/build/intermediates/merged_res/debug
-com.example.ussdauto.app-debug-29 /home/jacktsiresy/UssdAuto/app/src/debug/res
-com.example.ussdauto.app-main-30 /home/jacktsiresy/UssdAuto/app/src/main/res
+com.example.ussdauto.app-pngs-24 /home/jacktsiresy/Documents/Projet/firstapk/app/build/generated/res/pngs/debug
+com.example.ussdauto.app-resValues-25 /home/jacktsiresy/Documents/Projet/firstapk/app/build/generated/res/resValues/debug
+com.example.ussdauto.app-packageDebugResources-26 /home/jacktsiresy/Documents/Projet/firstapk/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.ussdauto.app-packageDebugResources-27 /home/jacktsiresy/Documents/Projet/firstapk/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.ussdauto.app-merged_res-28 /home/jacktsiresy/Documents/Projet/firstapk/app/build/intermediates/merged_res/debug
+com.example.ussdauto.app-debug-29 /home/jacktsiresy/Documents/Projet/firstapk/app/src/debug/res
+com.example.ussdauto.app-main-30 /home/jacktsiresy/Documents/Projet/firstapk/app/src/main/res
