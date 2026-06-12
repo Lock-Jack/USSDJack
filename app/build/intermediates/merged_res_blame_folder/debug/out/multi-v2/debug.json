@@ -1293,23 +1293,6 @@
                     }
                 },
                 {
-                    "source": "/home/jacktsiresy/UssdAuto/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "3,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "101,55",
-                        "endColumns": "101,45",
-                        "endOffsets": "198,96"
-                    },
-                    "to": {
-                        "startLines": "299,301",
-                        "startColumns": "4,4",
-                        "startOffsets": "19433,19618",
-                        "endColumns": "101,45",
-                        "endOffsets": "19530,19659"
-                    }
-                },
-                {
                     "source": "/home/jacktsiresy/.gradle/caches/transforms-3/cf47cac6c017aa1cb9bdb4a2f4215b89/transformed/jetified-startup-runtime-1.1.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -1341,6 +1324,23 @@
                         "startOffsets": "16983",
                         "endColumns": "42",
                         "endOffsets": "17021"
+                    }
+                },
+                {
+                    "source": "/home/jacktsiresy/Documents/Projet/firstapk/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "101,55",
+                        "endColumns": "101,45",
+                        "endOffsets": "198,96"
+                    },
+                    "to": {
+                        "startLines": "299,301",
+                        "startColumns": "4,4",
+                        "startOffsets": "19433,19618",
+                        "endColumns": "101,45",
+                        "endOffsets": "19530,19659"
                     }
                 },
                 {

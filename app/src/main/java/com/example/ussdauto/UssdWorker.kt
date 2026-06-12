@@ -19,20 +19,18 @@ class UssdWorker(
 
     override fun doWork(): Result {
         return try {
-            launchUssdCall()
+            // Lance l'appel USSD — le service d'accessibilité prend le relais
+            // pour détecter la confirmation et planifier le prochain cycle
+            val callIntent = Intent(Intent.ACTION_CALL).apply {
+                data = Uri.parse("tel:$USSD_NUMBER")
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            context.startActivity(callIntent)
             Log.d(TAG, "Appel USSD lancé : $USSD_NUMBER")
             Result.success()
         } catch (e: Exception) {
             Log.e(TAG, "Erreur lors du lancement USSD", e)
             Result.retry()
         }
-    }
-
-    private fun launchUssdCall() {
-        val callIntent = Intent(Intent.ACTION_CALL).apply {
-            data = Uri.parse("tel:$USSD_NUMBER")
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        }
-        context.startActivity(callIntent)
     }
 }
